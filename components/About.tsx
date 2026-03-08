@@ -110,7 +110,7 @@ export default function About() {
             </div>
 
             <a
-              href="https://linkedin.com/in/ashishbhargava"
+              href="https://www.linkedin.com/in/ashishnbhargava/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 glass border-purple-500/25 hover:border-purple-500/50 text-purple-300 hover:text-white px-5 py-3 rounded-xl text-sm font-medium transition-all duration-200"

@@ -6,6 +6,8 @@ const navLinks = [
   { label: 'FAQ', href: '#faq' },
 ]
 
+import Image from 'next/image'
+
 export default function Footer() {
   const year = new Date().getFullYear()
 
@@ -15,13 +17,14 @@ export default function Footer() {
         {/* Top row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-10">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg btn-primary flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-purple-900/40">
-              M
-            </div>
-            <span className="font-semibold text-white text-base tracking-tight">
-              Mainstreet <span className="text-purple-400">AI</span>
-            </span>
+          <a href="#">
+            <Image
+              src="/logo.png"
+              alt="Mainstreet AI"
+              width={200}
+              height={60}
+              className="h-10 w-auto"
+            />
           </a>
 
           {/* Nav */}
