@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 
 const links = [
   { label: 'Why Us', href: '#why' },
@@ -31,13 +32,15 @@ export default function Nav() {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-lg btn-primary flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-purple-900/50">
-            M
-          </div>
-          <span className="font-semibold text-white text-lg tracking-tight leading-none">
-            Mainstreet <span className="text-purple-400">AI</span>
-          </span>
+        <a href="#" className="flex items-center group">
+          <Image
+            src="/logo.png"
+            alt="Mainstreet AI"
+            width={200}
+            height={60}
+            className="h-10 w-auto"
+            priority
+          />
         </a>
 
         {/* Desktop nav */}

@@ -3,6 +3,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Building2, Brain, Linkedin } from 'lucide-react'
+import Image from 'next/image'
 
 const credentials = [
   {
@@ -58,12 +59,13 @@ export default function About() {
               <div className="absolute -inset-4 bg-gradient-to-br from-purple-600/20 to-purple-900/10 rounded-[2rem] blur-2xl" />
               {/* Card */}
               <div className="relative glass rounded-3xl overflow-hidden aspect-[4/5]">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#2D1B69]/80 to-[#1A0A2E] flex flex-col items-center justify-center gap-4">
-                  <div className="w-28 h-28 rounded-full bg-purple-500/15 border-2 border-purple-400/30 flex items-center justify-center">
-                    <span className="text-5xl font-bold text-gradient-subtle">A</span>
-                  </div>
-                  <p className="text-purple-400/60 text-sm">Photo coming soon</p>
-                </div>
+                <Image
+                  src="/ashish.jpg"
+                  alt="Ashish Bhargava"
+                  fill
+                  className="object-cover object-top"
+                  sizes="340px"
+                />
               </div>
             </div>
           </motion.div>
