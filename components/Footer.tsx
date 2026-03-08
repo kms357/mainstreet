@@ -23,7 +23,7 @@ export default function Footer() {
               alt="Mainstreet AI"
               width={200}
               height={60}
-              className="h-10 w-auto"
+              className="h-40 w-auto"
             />
           </a>
 

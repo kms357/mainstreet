@@ -38,7 +38,7 @@ export default function Nav() {
             alt="Mainstreet AI"
             width={200}
             height={60}
-            className="h-20 w-auto"
+            className="h-40 w-auto"
             priority
           />
         </a>
